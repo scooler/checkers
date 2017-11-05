@@ -1,3 +1,5 @@
 # virtualenv dir
 checkers 
 .DS_Store
+
+__pycache__
