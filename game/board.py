@@ -67,8 +67,9 @@ class Board:
     return False
 
   def show(self):
-    print(self.board)
-    print(self.players_board)
+    # print(self.board)
+    # print(self.players_board)
+    return
 
 
   # def player(self, player_no):
