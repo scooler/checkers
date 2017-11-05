@@ -10,7 +10,15 @@ class Board:
       [0, 1] * 4,
       [1, 0] * 4
     ] * 4
+    players_board = [
+      [0, 1] * 4, # player 1
+      [1, 0] * 4
+    ] + [[0] * 8] * 4 + [ # 4 rows of nothing
+    [0, 2] * 4, # player 2
+      [2, 0] * 4
+    ]
     self.board = np.array(board)
+    self.players_board = np.array(players_board)
     self.x_size = 8
     self.y_size = 8
 
@@ -60,6 +68,7 @@ class Board:
 
   def show(self):
     print(self.board)
+    print(self.players_board)
 
 
   # def player(self, player_no):

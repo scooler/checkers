@@ -11,6 +11,7 @@ class Game:
 
 
   def start(self):
+    self.board.show()
     self.game_loop()
     # self.finish()
 
